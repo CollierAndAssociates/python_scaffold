@@ -2,6 +2,10 @@ install:
 	pip3 install --upgrade pip &&\
 		pip3 install -r requirements.txt
 
+install_azure:
+	pip install --upgrade pip &&\
+		pip install -r requirements-azure.txt
+
 format:
 	black *.py
 
